@@ -45,6 +45,7 @@ Few things to keep in mind before you start:
 - Replace all the instances of `myapp` with your application name (including the Dockerfile).
 - Install PNPM globally by running `npm install -g pnpm` and then run `pnpm install` to install the dependencies in the `web` directory.
 - Install air by running `go install github.com/air-verse/air@latest` to install the hot reload tool for the backend.
+- Create a new GitHub Discussion named "Release" to allow the GitHub Actions workflow to create discussions for each release. If you want to opt-out of this feature, you can remove the `discussion_category_name` in the [.goreleaser.yml](./.goreleaser.yml) file.
 
 ## 👨‍💻 Development
 
