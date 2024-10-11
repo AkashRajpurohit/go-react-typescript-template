@@ -1,0 +1,6 @@
+services:
+  myapp:
+    build: . # replace with your image name if you have one
+    ports:
+      - "8080:8080"
+    restart: unless-stopped

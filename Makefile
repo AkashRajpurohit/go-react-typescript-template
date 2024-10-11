@@ -25,7 +25,7 @@ build-frontend:
 .PHONY: build-backend
 build-backend:
 	@echo "Building backend Go binary..."
-	go build -o video2gif main.go
+	go build -o myapp main.go
 
 # Production build task
 .PHONY: build
@@ -43,3 +43,9 @@ serve:
 test:
 	@echo "Running tests..."
 	go test ./...
+
+# Docker build task
+.PHONY: docker-build
+docker-build:
+	@echo "Building Docker image..."
+	docker build -t myapp .
