@@ -1,5 +1,5 @@
 # Build frontend
-FROM node:20-alpine as frontend-builder
+FROM node:20-alpine AS frontend-builder
 WORKDIR /app/web
 COPY web/package.json web/pnpm-lock.yaml ./
 RUN npm install -g pnpm && pnpm install --frozen-lockfile
@@ -7,7 +7,7 @@ COPY web/ ./
 RUN pnpm run build
 
 # Build backend
-FROM golang:1.23.1-alpine as backend-builder
+FROM golang:1.23.1-alpine AS backend-builder
 WORKDIR /app
 RUN apk update && \
 	apk add upx ca-certificates tzdata
