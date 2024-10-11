@@ -1,0 +1,26 @@
+{
+  "projectName": "go-react-typescript-template",
+  "projectOwner": "AkashRajpurohit",
+  "files": [
+    "README.md"
+  ],
+  "contributors": [
+    {
+      "login": "AkashRajpurohit",
+      "name": "Akash Rajpurohit",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30044630?v=4",
+      "profile": "https://akashrajpurohit.com/?ref=go-react-typescript-template",
+      "contributions": [
+        "code",
+        "ideas",
+        "review",
+        "doc",
+        "question",
+        "platform"
+      ]
+    }
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7
+}
