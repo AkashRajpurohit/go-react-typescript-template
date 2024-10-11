@@ -26,7 +26,7 @@ This is a starter template for a fullstack web application using Go and React wi
 
 The backend is built with [Go](https://go.dev/), a statically typed language that is great for building APIs.
 
-### Features
+## ✨ Features
 
 - 🏗️ Go backend without any web framework (just the standard library, but you can add one if you want).
 - ❄️ React frontend with TypeScript and Vite (API calls are proxied to the Go backend).
@@ -35,7 +35,7 @@ The backend is built with [Go](https://go.dev/), a statically typed language tha
 - 📦 Package and release individual binaries as well as with Docker 🐋.
 - ⚙️ Makefile for common tasks.
 
-### Getting started
+## 🏃🏽‍♂️ Getting started
 
 Click on the "Use this template" button from the options to create a new repository using this template. This will create a new repository with the same structure as this repository.
 
@@ -46,7 +46,7 @@ Few things to keep in mind before you start:
 - Install PNPM globally by running `npm install -g pnpm` and then run `pnpm install` to install the dependencies in the `web` directory.
 - Install air by running `go install github.com/air-verse/air@latest` to install the hot reload tool for the backend.
 
-### Development
+## 👨‍💻 Development
 
 The project leverages make for common tasks. Here are some of the common tasks:
 
@@ -56,7 +56,7 @@ The project leverages make for common tasks. Here are some of the common tasks:
 
 Read more about the available tasks in the [Makefile](./Makefile).
 
-### Deployment
+## 🚢 Deployment
 
 You can deploy the application using Docker. You can build the Docker image by running `make docker-build` and then run the image using `docker run -p 8080:8080 myapp`.
 
