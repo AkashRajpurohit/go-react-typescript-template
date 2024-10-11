@@ -15,9 +15,9 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@eslint/js':
-        specifier: ^9.11.1
-        version: 9.12.0
+      '@biomejs/biome':
+        specifier: 1.9.3
+        version: 1.9.3
       '@types/react':
         specifier: ^18.3.10
         version: 18.3.11
@@ -27,15 +27,6 @@ importers:
       '@vitejs/plugin-react-swc':
         specifier: ^3.5.0
         version: 3.7.1(vite@5.4.8)
-      eslint:
-        specifier: ^9.11.1
-        version: 9.12.0
-      eslint-plugin-react-hooks:
-        specifier: ^5.1.0-rc.0
-        version: 5.1.0-rc-fb9a90fa48-20240614(eslint@9.12.0)
-      eslint-plugin-react-refresh:
-        specifier: ^0.4.12
-        version: 0.4.12(eslint@9.12.0)
       globals:
         specifier: ^15.9.0
         version: 15.11.0
@@ -50,6 +41,59 @@ importers:
         version: 5.4.8
 
 packages:
+
+  '@biomejs/biome@1.9.3':
+    resolution: {integrity: sha512-POjAPz0APAmX33WOQFGQrwLvlu7WLV4CFJMlB12b6ZSg+2q6fYu9kZwLCOA+x83zXfcPd1RpuWOKJW0GbBwLIQ==}
+    engines: {node: '>=14.21.3'}
+    hasBin: true
+
+  '@biomejs/cli-darwin-arm64@1.9.3':
+    resolution: {integrity: sha512-QZzD2XrjJDUyIZK+aR2i5DDxCJfdwiYbUKu9GzkCUJpL78uSelAHAPy7m0GuPMVtF/Uo+OKv97W3P9nuWZangQ==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@biomejs/cli-darwin-x64@1.9.3':
+    resolution: {integrity: sha512-vSCoIBJE0BN3SWDFuAY/tRavpUtNoqiceJ5PrU3xDfsLcm/U6N93JSM0M9OAiC/X7mPPfejtr6Yc9vSgWlEgVw==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@biomejs/cli-linux-arm64-musl@1.9.3':
+    resolution: {integrity: sha512-VBzyhaqqqwP3bAkkBrhVq50i3Uj9+RWuj+pYmXrMDgjS5+SKYGE56BwNw4l8hR3SmYbLSbEo15GcV043CDSk+Q==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@biomejs/cli-linux-arm64@1.9.3':
+    resolution: {integrity: sha512-vJkAimD2+sVviNTbaWOGqEBy31cW0ZB52KtpVIbkuma7PlfII3tsLhFa+cwbRAcRBkobBBhqZ06hXoZAN8NODQ==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@biomejs/cli-linux-x64-musl@1.9.3':
+    resolution: {integrity: sha512-TJmnOG2+NOGM72mlczEsNki9UT+XAsMFAOo8J0me/N47EJ/vkLXxf481evfHLlxMejTY6IN8SdRSiPVLv6AHlA==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [linux]
+
+  '@biomejs/cli-linux-x64@1.9.3':
+    resolution: {integrity: sha512-x220V4c+romd26Mu1ptU+EudMXVS4xmzKxPVb9mgnfYlN4Yx9vD5NZraSx/onJnd3Gh/y8iPUdU5CDZJKg9COA==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [linux]
+
+  '@biomejs/cli-win32-arm64@1.9.3':
+    resolution: {integrity: sha512-lg/yZis2HdQGsycUvHWSzo9kOvnGgvtrYRgoCEwPBwwAL8/6crOp3+f47tPwI/LI1dZrhSji7PNsGKGHbwyAhw==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@biomejs/cli-win32-x64@1.9.3':
+    resolution: {integrity: sha512-cQMy2zanBkVLpmmxXdK6YePzmZx0s5Z7KEnwmrW54rcXK3myCNbQa09SwGZ8i/8sLw0H9F3X7K4rxVNGU8/D4Q==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [win32]
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -562,17 +606,6 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-plugin-react-hooks@5.1.0-rc-fb9a90fa48-20240614:
-    resolution: {integrity: sha512-xsiRwaDNF5wWNC4ZHLut+x/YcAxksUd9Rizt7LaEn3bV8VyYRpXnRJQlLOfYaVy9esk4DFP4zPPnoNVjq5Gc0w==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
-
-  eslint-plugin-react-refresh@0.4.12:
-    resolution: {integrity: sha512-9neVjoGv20FwYtCP6CB1dzR1vr57ZDNOXst21wd2xJ/cTlM2xLq0GWVlSNTdMn/4BtP6cHYBMCSp1wFBJ9jBsg==}
-    peerDependencies:
-      eslint: '>=7'
-
   eslint-scope@8.1.0:
     resolution: {integrity: sha512-14dSvlhaVhKKsa9Fx1l8A17s7ah7Ef7wCakJ10LYk6+GYmP9yDti2oq2SEwcyndt6knfcZyhyxwY3i9yL78EQw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -943,6 +976,41 @@ packages:
     engines: {node: '>=10'}
 
 snapshots:
+
+  '@biomejs/biome@1.9.3':
+    optionalDependencies:
+      '@biomejs/cli-darwin-arm64': 1.9.3
+      '@biomejs/cli-darwin-x64': 1.9.3
+      '@biomejs/cli-linux-arm64': 1.9.3
+      '@biomejs/cli-linux-arm64-musl': 1.9.3
+      '@biomejs/cli-linux-x64': 1.9.3
+      '@biomejs/cli-linux-x64-musl': 1.9.3
+      '@biomejs/cli-win32-arm64': 1.9.3
+      '@biomejs/cli-win32-x64': 1.9.3
+
+  '@biomejs/cli-darwin-arm64@1.9.3':
+    optional: true
+
+  '@biomejs/cli-darwin-x64@1.9.3':
+    optional: true
+
+  '@biomejs/cli-linux-arm64-musl@1.9.3':
+    optional: true
+
+  '@biomejs/cli-linux-arm64@1.9.3':
+    optional: true
+
+  '@biomejs/cli-linux-x64-musl@1.9.3':
+    optional: true
+
+  '@biomejs/cli-linux-x64@1.9.3':
+    optional: true
+
+  '@biomejs/cli-win32-arm64@1.9.3':
+    optional: true
+
+  '@biomejs/cli-win32-x64@1.9.3':
+    optional: true
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
@@ -1368,14 +1436,6 @@ snapshots:
       '@esbuild/win32-x64': 0.21.5
 
   escape-string-regexp@4.0.0: {}
-
-  eslint-plugin-react-hooks@5.1.0-rc-fb9a90fa48-20240614(eslint@9.12.0):
-    dependencies:
-      eslint: 9.12.0
-
-  eslint-plugin-react-refresh@0.4.12(eslint@9.12.0):
-    dependencies:
-      eslint: 9.12.0
 
   eslint-scope@8.1.0:
     dependencies:
