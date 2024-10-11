@@ -35,6 +35,11 @@ jobs:
         with:
           go-version-file: "go.mod"
 
+      - name: Run golangci-lint
+        uses: golangci/golangci-lint-action@v6
+        with:
+          version: v1.60
+
       - name: Run tests
         run: go test -v ./...
 

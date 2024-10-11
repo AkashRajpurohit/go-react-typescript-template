@@ -27,6 +27,12 @@ build-backend:
 	@echo "Building backend Go binary..."
 	go build -o myapp main.go
 
+# Lint task
+.PHONY: lint
+lint:
+	@echo "Running linters..."
+	golangci-lint run ./... && cd web && pnpm run lint
+
 # Production build task
 .PHONY: build
 build: clean build-frontend build-backend

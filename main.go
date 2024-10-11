@@ -14,7 +14,10 @@ func main() {
 
 	// Setup API routes
 	http.HandleFunc("/api/say-my-name", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("You're Goddamn right!"))
+		_, err := w.Write([]byte("You're Goddamn right!"))
+		if err != nil {
+			fmt.Println("Error writing text to response")
+		}
 	})
 
 	// Start the Go server on port 8080
