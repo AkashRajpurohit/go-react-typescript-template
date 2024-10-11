@@ -72,6 +72,19 @@ If you found the project helpful, consider giving it a star ⭐️. If you would
 
 If you encounter any problems feel free to open an [issue](https://github.com/AkashRajpurohit/go-react-typescript-template/issues/new?template=bug_report.yml). If you feel the project is missing a feature, please raise a [ticket](https://github.com/AkashRajpurohit/go-react-typescript-template/issues/new?template=feature_request.yml) on GitHub and I'll look into it. Pull requests are also welcome.
 
+## 🫱🏻‍🫲🏼 Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://akashrajpurohit.com/?ref=git-sync"><img src="https://avatars.githubusercontent.com/u/30044630?v=4?s=100" width="100px;" alt="Akash Rajpurohit"/><br /><sub><b>Akash Rajpurohit</b></sub></a><br /><a href="#code-AkashRajpurohit" title="Code">💻</a> <a href="#ideas-AkashRajpurohit" title="Ideas, Planning, & Feedback">🤔</a> <a href="#review-AkashRajpurohit" title="Reviewed Pull Requests">👀</a> <a href="#doc-AkashRajpurohit" title="Documentation">📖</a> <a href="#question-AkashRajpurohit" title="Answering Questions">💬</a> <a href="#platform-AkashRajpurohit" title="Packaging/porting to new platform">📦</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ## 👀 Who am I?
 
 [![Website Badge](https://img.shields.io/badge/-akashrajpurohit.com-3b5998?logo=google-chrome&logoColor=white)](https://akashrajpurohit.com/)
