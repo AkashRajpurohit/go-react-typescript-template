@@ -46,7 +46,7 @@ Few things to keep in mind before you start:
 - Replace all the instances of `myapp` with your application name (including the Dockerfile).
 - Install PNPM globally by running `npm install -g pnpm` and then run `pnpm install` to install the dependencies in the `web` directory.
 - Install air by running `go install github.com/air-verse/air@latest` to install the hot reload tool for the backend.
-- Create a new GitHub Discussion named "Release" to allow the GitHub Actions workflow to create discussions for each release. If you want to opt-out of this feature, you can remove the `discussion_category_name` in the [.goreleaser.yml](./.goreleaser.yml) file.
+- Create a new GitHub Discussion named "Release" to allow the GitHub Actions workflow to create discussions for each release. If you want to opt-out of this feature, you can remove the `discussion_category_name` in the [.goreleaser.yml](./.goreleaser.yml#L54) file.
 
 ## 👨‍💻 Development
 
@@ -62,9 +62,9 @@ Read more about the available tasks in the [Makefile](./Makefile).
 
 You can deploy the application using Docker. You can build the Docker image by running `make docker-build` and then run the image using `docker run -p 8080:8080 myapp`.
 
-The template also comes with a GitHub Actions workflow that builds and releases the binaries for Linux, macOS, and Windows. The binaries are attached to the release and can be downloaded from there.
+The template also comes with a GitHub Actions workflow that [builds and releases](./.github/workflows/release.yml) the binaries for Linux, macOS, and Windows. The binaries are [attached to the release](https://github.com/AkashRajpurohit/go-react-typescript-template/releases) and can be downloaded from there.
 
-To initiate a new release, create a new tag and push it to the repository. The GitHub Actions workflow will automatically build and release the binaries and attach them to the release as well as create a new docker image and push it to the GitHub Container Registry.
+To initiate a new release, create a new tag (in `v*.*.*` format) and push it to the repository. The GitHub Actions workflow will automatically build and release the binaries and attach them to the release as well as create a [new docker image and push it to the GitHub Container Registry](https://github.com/AkashRajpurohit/go-react-typescript-template/pkgs/container/go-react-typescript-template).
 
 ## 🙏🏻 Support
 
