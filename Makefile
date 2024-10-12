@@ -42,7 +42,7 @@ build: clean build-frontend build-backend
 .PHONY: serve
 serve:
 	@echo "Starting the production server..."
-	./video2gif
+	./myapp
 
 # Run all tests
 .PHONY: test
