@@ -16,9 +16,6 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
-env:
-  REGISTRY_IMAGE: ghcr.io/${{ github.repository }}
-
 jobs:
   test:
     name: Test
@@ -81,10 +78,16 @@ jobs:
           - linux/amd64
           - linux/arm64
     steps:
+      - id: registry
+        uses: vishalmamidi/lowercase-action@v1
+        with:
+          string: ${{ github.repository }}
+
       - name: Prepare
         run: |
           platform=${{ matrix.platform }}
-          echo "PLATFORM_PAIR=${platform//\//-}" >> $GITHUB_ENV          
+          echo "PLATFORM_PAIR=${platform//\//-}" >> $GITHUB_ENV
+          echo "REGISTRY_IMAGE=ghcr.io/${{ steps.registry.outputs.lowercase }}" >> $GITHUB_ENV      
       
       - name: Docker meta
         id: meta
@@ -137,6 +140,15 @@ jobs:
       - docker_build
     timeout-minutes: 15
     steps:
+      - id: registry
+        uses: vishalmamidi/lowercase-action@v1
+        with:
+          string: ${{ github.repository }}
+
+      - name: Prepare
+        run: |
+          echo "REGISTRY_IMAGE=ghcr.io/${{ steps.registry.outputs.lowercase }}" >> $GITHUB_ENV  
+
       - name: Download digests
         uses: actions/download-artifact@v4
         with:
