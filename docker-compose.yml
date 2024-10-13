@@ -1,5 +1,5 @@
 services:
-  myapp:
+  go-react-typescript-template:
     build: . # replace with your image name if you have one
     ports:
       - "8080:8080"

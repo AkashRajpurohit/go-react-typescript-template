@@ -43,7 +43,7 @@ Click on the "Use this template" button from the options to create a new reposit
 Few things to keep in mind before you start:
 
 - Change the module name in `go.mod` to your module name.
-- Replace all the instances of `myapp` with your application name (including the Dockerfile).
+- Replace all the instances of `go-react-typescript-template` with your application name (including the [Dockerfile](./Dockerfile) file).
 - Install PNPM globally by running `npm install -g pnpm` and then run `pnpm install` to install the dependencies in the `web` directory.
 - Install air by running `go install github.com/air-verse/air@latest` to install the hot reload tool for the backend.
 - Create a new GitHub Discussion named "Release" to allow the GitHub Actions workflow to create discussions for each release. If you want to opt-out of this feature, you can remove the `discussion_category_name` in the [.goreleaser.yml](./.goreleaser.yml#L54) file.
@@ -60,7 +60,7 @@ Read more about the available tasks in the [Makefile](./Makefile).
 
 ## 🚢 Deployment
 
-You can deploy the application using Docker. You can build the Docker image by running `make docker-build` and then run the image using `docker run -p 8080:8080 myapp`.
+You can deploy the application using Docker. You can build the Docker image by running `make docker-build` and then run the image using `docker run -p 8080:8080 go-react-typescript-template`.
 
 The template also comes with a GitHub Actions workflow that [builds and releases](./.github/workflows/release.yml) the binaries for Linux, macOS, and Windows. The binaries are [attached to the release](https://github.com/AkashRajpurohit/go-react-typescript-template/releases) and can be downloaded from there.
 

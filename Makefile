@@ -25,7 +25,7 @@ build-frontend:
 .PHONY: build-backend
 build-backend:
 	@echo "Building backend Go binary..."
-	go build -o myapp main.go
+	go build -o go-react-typescript-template main.go
 
 # Lint task
 .PHONY: lint
@@ -42,7 +42,7 @@ build: clean build-frontend build-backend
 .PHONY: serve
 serve:
 	@echo "Starting the production server..."
-	./myapp
+	./go-react-typescript-template
 
 # Run all tests
 .PHONY: test
@@ -54,4 +54,4 @@ test:
 .PHONY: docker-build
 docker-build:
 	@echo "Building Docker image..."
-	docker build -t myapp .
+	docker build -t go-react-typescript-template .

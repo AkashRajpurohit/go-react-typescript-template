@@ -15,13 +15,13 @@ COPY go.* ./
 RUN go mod download
 COPY . .
 COPY --from=frontend-builder /app/web/dist ./web/dist
-RUN go build -a -installsuffix cgo -ldflags="-w -s" -o myapp . \
-	&& upx -q myapp
+RUN go build -a -installsuffix cgo -ldflags="-w -s" -o go-react-typescript-template . \
+	&& upx -q go-react-typescript-template
 
 # Application Image
 FROM alpine:latest
 WORKDIR /app
-COPY --from=backend-builder /app/myapp .
+COPY --from=backend-builder /app/go-react-typescript-template .
 COPY --from=backend-builder /app/web/dist ./web/dist
 EXPOSE 8080
-CMD ["./myapp"]
+CMD ["./go-react-typescript-template"]
