@@ -31,6 +31,7 @@ The backend is built with [Go](https://go.dev/), a statically typed language tha
 - 🏗️ Go backend without any web framework (just the standard library, but you can add one if you want).
 - ❄️ React frontend with TypeScript and Vite (API calls are proxied to the Go backend).
 - ⚡️ Hot module reloading for both the frontend and backend.
+- 💅🏽 TailwindCSS for styling.
 - 📦 Package and release binaries for multiple operating systems (MacOS, Windows and Linux).
 - 🐳 Dockerfile for building and running the application in a container with multi-platform support (linux/amd64, linux/arm64)
 - 🏃🏽‍♂️ PNPM as package manager for the frontend application.
