@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts"],"version":"5.6.3"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/routetree.gen.ts","./src/vite-env.d.ts","./src/routes/__root.tsx","./src/routes/about.lazy.tsx","./src/routes/index.lazy.tsx"],"version":"5.6.3"}
