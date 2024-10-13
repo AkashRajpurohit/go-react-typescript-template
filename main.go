@@ -13,8 +13,8 @@ func main() {
 	http.Handle("/", fileServer)
 
 	// Setup API routes
-	http.HandleFunc("/api/say-my-name", func(w http.ResponseWriter, r *http.Request) {
-		_, err := w.Write([]byte("You're Goddamn right!"))
+	http.HandleFunc("/api/ping", func(w http.ResponseWriter, r *http.Request) {
+		_, err := w.Write([]byte("Pong!"))
 		if err != nil {
 			fmt.Println("Error writing text to response")
 		}

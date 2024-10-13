@@ -5,7 +5,7 @@ function App() {
 	const [message, setMessage] = useState("");
 
 	useEffect(() => {
-		fetch("/api/say-my-name")
+		fetch("/api/ping")
 			.then((res) => res.text())
 			.then((data) => setMessage(data))
 			.catch((err) => console.error(err));
