@@ -29,10 +29,10 @@ importers:
         version: 1.95.3(@tanstack/react-router@1.95.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(vite@6.0.7(jiti@1.21.7)(tsx@4.19.2)(yaml@2.7.0))
       '@types/react':
         specifier: ^19.0.4
-        version: 19.0.4
+        version: 19.0.8
       '@types/react-dom':
         specifier: ^19.0.2
-        version: 19.0.2(@types/react@19.0.4)
+        version: 19.0.2(@types/react@19.0.8)
       '@vitejs/plugin-react-swc':
         specifier: ^3.7.2
         version: 3.7.2(vite@6.0.7(jiti@1.21.7)(tsx@4.19.2)(yaml@2.7.0))
@@ -835,8 +835,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@19.0.4':
-    resolution: {integrity: sha512-3O4QisJDYr1uTUMZHA2YswiQZRq+Pd8D+GdVFYikTutYsTz+QZgWkAPnP7rx9txoI6EXKcPiluMqWPFV3tT9Wg==}
+  '@types/react@19.0.8':
+    resolution: {integrity: sha512-9P/o1IGdfmQxrujGbIMDyYaaCykhLKc0NGCtYcECNUr9UAaDe4gwvV9bR6tvd5Br1SG0j+PBpbKr2UYY8CwqSw==}
 
   '@typescript-eslint/eslint-plugin@8.19.1':
     resolution: {integrity: sha512-tJzcVyvvb9h/PB96g30MpxACd9IrunT7GF9wfA9/0TJ1LxGOJx1TdPzSbBBnNED7K9Ka8ybJsnEpiXPktolTLg==}
@@ -2334,11 +2334,11 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/react-dom@19.0.2(@types/react@19.0.4)':
+  '@types/react-dom@19.0.2(@types/react@19.0.8)':
     dependencies:
-      '@types/react': 19.0.4
+      '@types/react': 19.0.8
 
-  '@types/react@19.0.4':
+  '@types/react@19.0.8':
     dependencies:
       csstype: 3.1.3
 
