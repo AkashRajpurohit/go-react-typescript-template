@@ -7,7 +7,7 @@ COPY web/ ./
 RUN pnpm run build
 
 # Build backend
-FROM golang:1.23.4-alpine AS backend-builder
+FROM golang:1.23.5-alpine AS backend-builder
 WORKDIR /app
 RUN apk update && \
 	apk add upx ca-certificates tzdata

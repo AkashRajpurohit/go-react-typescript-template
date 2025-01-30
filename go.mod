@@ -1,3 +1,3 @@
 module github.com/AkashRajpurohit/go-react-vite-template
 
-go 1.23.4
+go 1.23.5
