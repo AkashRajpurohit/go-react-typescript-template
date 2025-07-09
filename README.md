@@ -26,6 +26,12 @@ This is a starter template for a fullstack web application using Go and React wi
 
 The backend is built with [Go](https://go.dev/), a statically typed language that is great for building APIs.
 
+## 🧑‍💻 How to use it
+
+<img width="569" alt="image" src="https://github.com/user-attachments/assets/5d9c2631-0bb4-48cc-92de-34094a77eadd" />
+
+Click on "Use this template" button on the top right of the project.
+
 ## ✨ Features
 
 - 🏗️ Go backend without any web framework (just the standard library, but you can add one if you want).
